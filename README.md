@@ -1,6 +1,9 @@
 ﻿微信支付 Java SDK
 ------
-
+1、修改WXPayConfig中的所有方法为public
+2、修改微信支付相关的java类中使用的Config为this.Config
+3、修改正常环境的加密方式也是MD5加密
+--------
 对[微信支付开发者文档](https://pay.weixin.qq.com/wiki/doc/api/index.html)中给出的API进行了封装。
 
 com.github.wxpay.sdk.WXPay类下提供了对应的方法：
